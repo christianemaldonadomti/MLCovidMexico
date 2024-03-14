@@ -1,0 +1,11 @@
+name,config
+Model1,"input_features: [{name: feature1, type: numerical}]\noutput_features: [{name: target, type: category}]"
+Model2,"input_features: [{name: feature1, type: text}]\noutput_features: [{name: target, type: binary}]"
+Model3,"input_features: [{name: feature1, type: image, height: 32, width: 32, num_channels: 3}]\noutput_features: [{name: target, type: category}]"
+Model4,"input_features: [{name: feature1, type: categorical}, {name: feature2, type: numerical}]\noutput_features: [{name: target, type: category}]"
+Model5,"input_features: [{name: feature1, type: sequence, max_sequence_length: 256}]\noutput_features: [{name: target, type: sequence, max_sequence_length: 256}]"
+Model6,"input_features: [{name: feature1, type: set}]\noutput_features: [{name: target, type: binary}]"
+Model7,"input_features: [{name: feature1, type: audio, preprocessing: {audio_file_length_limit_in_s: 10}}]\noutput_features: [{name: target, type: category}]"
+Model8,"input_features: [{name: feature1, type: text, encoder: 'bert', pretrained_model_name_or_path: 'bert-base-uncased'}]\noutput_features: [{name: target, type: category}]"
+Model9,"input_features: [{name: feature1, type: date, preprocessing: {datetime_format: '%Y-%m-%d'}}]\noutput_features: [{name: target, type: numerical}]"
+Model10,"input_features: [{name: feature1, type: vector, vector_size: 128}]\noutput_features: [{name: target, type: numerical}]"
